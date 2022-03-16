@@ -17,10 +17,30 @@ You should download and install these properly on your system. Visit the website
 
 ## Running Tests
 
+You can run from the docker image provided using the below command.
+All browsers:
+```
+docker-compose up
+```
+
+Firefox
+```
+docker-compose up firefox
+```
+
+Chrome
+```
+docker-compose up chrome
+```
 
 You can run the tests by opening Cypress using the below command line. 
 ```
 npm run cy:open
+```
+
+You can open the reports generated using the following. 
+```
+npm run cy:report
 ```
 
 

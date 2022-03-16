@@ -23,7 +23,10 @@ Then("there are no console errors", () => {
 });
 
 Given("I request the htmlcss page", () => {
-    cy.request(htmlcssUrl).as("htmlcssrequest");
+    cy.request({
+        url:htmlcssUrl,
+        failOnStatusCode:false
+    }).as("htmlcssrequest");
 });
 
 Then(

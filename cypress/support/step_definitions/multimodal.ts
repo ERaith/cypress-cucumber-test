@@ -25,7 +25,10 @@ Then("there are no console errors", () => {
 });
 
 Given("I request the multimodal page", () => {
-    cy.request(multimodalPageUrl).as("multimodalrequest");
+    cy.request({
+        url:multimodalPageUrl,
+        failOnStatusCode:false
+    }).as("multimodalrequest");
 });
 
 Then(
