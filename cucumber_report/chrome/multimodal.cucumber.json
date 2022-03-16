@@ -1,0 +1,122 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Multimodal Page",
+    "line": 2,
+    "id": "multimodal-page",
+    "tags": [
+      {
+        "name": "@multimodal",
+        "line": 1
+      }
+    ],
+    "uri": "multimodal.feature",
+    "elements": [
+      {
+        "id": "multimodal-page;page-is-free-of-console-errors",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Page is free of console errors",
+        "tags": [
+          {
+            "name": "@multimodal",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit the multimodal page",
+            "result": {
+              "status": "passed",
+              "duration": 2025000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "there are no console errors",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "multimodal-page;requested-page-status-code-is-200",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Requested Page Status Code is 200",
+        "tags": [
+          {
+            "name": "@multimodal",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I request the multimodal page",
+            "result": {
+              "status": "passed",
+              "duration": 433000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the multimodal page request has a status code of 200",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "multimodal-page;links-on-page-are-valid",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Links on Page are Valid",
+        "tags": [
+          {
+            "name": "@multimodal",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I visit the multimodal page",
+            "result": {
+              "status": "passed",
+              "duration": 1006000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "all link requests should respond with a 200 status",
+            "result": {
+              "status": "passed",
+              "duration": 12040000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

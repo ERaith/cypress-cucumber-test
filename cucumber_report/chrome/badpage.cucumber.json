@@ -1,0 +1,122 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Badpage Page",
+    "line": 2,
+    "id": "badpage-page",
+    "tags": [
+      {
+        "name": "@badpage",
+        "line": 1
+      }
+    ],
+    "uri": "badpage.feature",
+    "elements": [
+      {
+        "id": "badpage-page;page-is-free-of-console-errors",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Page is free of console errors",
+        "tags": [
+          {
+            "name": "@badpage",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit the bad page",
+            "result": {
+              "status": "passed",
+              "duration": 2235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "there are no console errors",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "badpage-page;requested-page-status-code-is-200",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Requested Page Status Code is 200",
+        "tags": [
+          {
+            "name": "@badpage",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I request the bad page",
+            "result": {
+              "status": "passed",
+              "duration": 566000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the bad page request has a status code of 200",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at Context.eval (https://www.w3.org/__cypress/tests?p=cypress/integration/features/badpage.feature:73:36)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "badpage-page;links-on-page-are-valid",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Links on Page are Valid",
+        "tags": [
+          {
+            "name": "@badpage",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I visit the bad page",
+            "result": {
+              "status": "passed",
+              "duration": 892000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "all link requests should respond with a 200 status",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at Context.eval (https://www.w3.org/__cypress/tests?p=cypress/integration/features/badpage.feature:31:40)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

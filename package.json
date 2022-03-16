@@ -1,0 +1,32 @@
+{
+  "name": "docker-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "./node_modules/.bin/cypress run",
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:tags": "./node_modules/.bin/cypress-tags run",
+    "cy:report": "node report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber-html-reporter": "^5.5.0",
+    "cypress": "^9.5.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "ts-loader": "^9.2.8"
+  },
+  "cypress-cucumber-preprocessor": {
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cucumber_report",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}

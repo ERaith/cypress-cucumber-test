@@ -1,0 +1,87 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Multimodal Page",
+    "line": 2,
+    "id": "multimodal-page",
+    "tags": [
+      {
+        "name": "@multimodal",
+        "line": 1
+      }
+    ],
+    "uri": "multimodal.feature",
+    "elements": [
+      {
+        "id": "multimodal-page;page-loads-properly",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Page loads properly",
+        "tags": [
+          {
+            "name": "@multimodal",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the mmultimodal page",
+            "result": {
+              "status": "passed",
+              "duration": 3019000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "There are no console errors",
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "multimodal-page;links-on-page-are-valid",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Links on Page are Valid",
+        "tags": [
+          {
+            "name": "@multimodal",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the mmultimodal page",
+            "result": {
+              "status": "passed",
+              "duration": 579000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "All links should have a valid live page",
+            "result": {
+              "status": "passed",
+              "duration": 16782000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
