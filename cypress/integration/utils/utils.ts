@@ -1,5 +1,5 @@
 export const testLinks = (expected:number):void => {
-    cy.get("a[href]").not('[href=""]').not("[href*='mailto:']").each(el => {
+    cy.get("a[href]").not("[href=''],[href*='#'],[href*='mailto:']").each(el => {
         const link = el.prop('href')
         cy.request({
           url: link,
